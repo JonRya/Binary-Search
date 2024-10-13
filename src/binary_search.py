@@ -26,13 +26,3 @@ def binary_seach(val: int, ordered_list: list[int]) -> int:
             return -1
     
     return index
-
-
-# For testing purposes
-if __name__ == '__main__':
-    test = [x for x in range(50)]
-    val = 50
-    index = binary_seach(val, test)
-    print(f'Index: {index}')
-    if index != -1:
-        assert test[index] == val
