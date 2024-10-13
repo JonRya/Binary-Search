@@ -7,11 +7,9 @@ def binary_seach(val: int, ordered_list: list[int]) -> int:
         mid: int = len(ordered_list) // 2
         if val < ordered_list[mid]:
             ordered_list = ordered_list[:mid]
-            # mid = binary_seach(val, ordered_list[:mid])
         elif val > ordered_list[mid]:
             index += mid
             ordered_list = ordered_list[mid:]
-            # mid = mid + binary_seach(val, ordered_list[mid:])
         else:
             index += mid
             break
